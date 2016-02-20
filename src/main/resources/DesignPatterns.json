@@ -1,0 +1,160 @@
+{
+  "questions": [
+    {
+      "question": "Design patterns are broken down into 3 groups",
+      "answer" : [
+        "Creational - concerned with the process of object creation",
+        "Structural - deal with the composition of classes or objects",
+        "Behavioural - characterize the ways in which classes or objects interact or distribute responsibility"
+      ]
+    },
+    {
+      "question": "Creational pattern - Abstract Factory",
+      "answer" : [
+        "Provide an interface for creating families of related or dependant objects without specifying their concrete classes"
+      ]
+    },
+    {
+      "question": "Creational pattern - Builder",
+      "answer" : [
+        "Separate the construction of a complex object from its representation so that the same construction process can create different representations."
+      ]
+    },
+    {
+      "question": "Creational pattern - Factory Method",
+      "answer" : [
+        "Define an interface for creating an object, but let subclasses decide which class to instantiate.",
+        "Factory method lets a class defer instantiation to subclasses"
+      ]
+    },
+    {
+      "question": "Creational pattern - Prototype",
+      "answer" : [
+        "Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype"
+      ]
+    },
+    {
+      "question": "Creational pattern - Singleton",
+      "answer" : [
+        "Ensure a class only has one instance, and provide a global point of access to it."
+      ]
+    },
+    {
+      "question": "Structural pattern - Adapter",
+      "answer" : [
+        "Convert the interface of a class into another interface clients expect.",
+        "Adapter lets classes work together that couldn't otherwise because of incompatible interfaces"
+      ]
+    },
+    {
+      "question": "Structural pattern - Bridge",
+      "answer" : [
+        "Decouple an abstraction from its implementation so that two can vary independently"
+      ]
+    },
+    {
+      "question": "Structural pattern - Composite",
+      "answer" : [
+        "Compose objects into tree structures to represent part-whole hierarchies.",
+        "Composite lets clients treat individual objects and compositions of objects uniformly"
+      ]
+    },
+    {
+      "question": "Structural pattern - Decorator",
+      "answer" : [
+        "Attach additional responsibilities to an object dynamically.",
+        "Decorators provide a flexible alternative to subclassing for extending functionality"
+      ]
+    },
+    {
+      "question": "Structural pattern - Facade",
+      "answer" : [
+        "Provide a unified interface to a set of interfaces in a subsystem.",
+        "Facade defines a higher-level interface that makes the subsystem easier to use"
+      ]
+    },
+    {
+      "question": "Structural pattern - Flyweight",
+      "answer" : [
+        "Use sharing to support large numbers of fine grained objects efficiently"
+      ]
+    },
+    {
+      "question": "Structural pattern - Proxy",
+      "answer" : [
+        "Provide a surrogate or placeholder for another object to control access to it"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Chain of responsibility",
+      "answer": [
+        "Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.",
+        "Chain the receiving objects and pass the request along the chain until an object handles it."
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Command",
+      "answer": [
+        "Encapsulate a request as an object, there by letting you parameterize clients with different requests, queue or log requests and support undoable operations"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Interpreter",
+      "answer": [
+        "Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Iterator",
+      "answer": [
+        "Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Mediator",
+      "answer": [
+        "Define an object that encapsulates how a set of objects interact.",
+        "Mediator provides loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Memento",
+      "answer": [
+        "Without violating encapsulation, capture and externalize an objects internal state so that the object can be restored to this state later"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Observer",
+      "answer": [
+        "Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - State",
+      "answer": [
+        "Allow an object to alter its behaviour when the internal state changes. The object will appear to have changed its class"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Strategy",
+      "answer": [
+        "Define a family of algorithms, encapsulate each one and make them interchangeable.",
+        "Strategy lets the algorithm vary independently form clients that use it."
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Template method",
+      "answer": [
+        "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.",
+        "Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure"
+      ]
+    },
+    {
+      "question": "Behavioral pattern - Visitor",
+      "answer": [
+        "Represent an operation to be preformed on the elements of an object structure.",
+        "Visitor lets you define a new operation without changing the classes of the elements on which it operates"
+      ]
+    }
+  ]
+}
