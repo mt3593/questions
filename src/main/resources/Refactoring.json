@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "question": "How to refactor",
+      "answer": [
+        "change the program in small steps. If you make a mistake, it's easy to find the bug!"
+      ]
+    },
+    {
+      "question": "Before refactoring",
+      "answer": [
+        "Before you start refactoring, check that you have a solid suite of tests"
+      ]
+    },
+    {
+      "question": "Interface changes with refactoring",
+      "answer": [
+        "Don't publish interfaces prematurely. Modify your code owner-ship polices to smooth refactoring"
+      ]
+    }
+  ]
+}

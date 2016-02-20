@@ -240,8 +240,230 @@
       ]
     },
     {
-      "question": "",
-      "answer": [""]
+      "question": "Closures",
+      "answer": [
+        "A closure is a function that carries an implicit binding to all the variables referenced within it.",
+        "In other words, the function (or method) encloses a context around the things it references"
+      ]
+    },
+    {
+      "question": "Currying",
+      "answer": [
+        "Converting a single function of n arguments into n functions with a single argument each.",
+        "Given the following: f(X,Y,Z) {Z(X(Y));}",
+        "When curried becomes: f(X) { lambda (Y) {lambda (Z){ Z(X(Y));}}",
+        "In order to get the full application of f(X,Y,Z), you need todo this. f(X)(Y)(Z);"
+      ]
+    },
+    {
+      "question": "Partial function application",
+      "answer": [
+        "Supplying less arguments to a function that requires more returns a partial function so:",
+        "Lets say we have: Add three numbers (a, b, c)",
+        "If we supply a, b we get: newMethod = addThreeNumbers(a, b)",
+        "So we can: Z = newMethod(c)",
+        "Y = newMethod(c2)"
+      ]
+    },
+    {
+      "question": "Side effect",
+      "answer": [
+        "Any observable change of state resulting from an operation whether intentional or not, even a deliberate update"
+      ]
+    },
+    {
+      "question": "Homoiconic",
+      "answer": [
+        "Same representation of code and data, from homo meaning same and icon meaning representation"
+      ]
+    },
+    {
+      "question": "Thinking agile",
+      "answer": [
+        "The greatest of all weaknesses is the fear of appearing weak",
+        "Provide options, don't make excuses",
+        "Be a catalyst for change",
+        "Remember the big picture",
+        "Make quality a requirements issue",
+        "An investment in knowledge always pays the best interest",
+        "Learn at least one new language every year",
+        "Isolation can be deadly to your career",
+        "Critically analyse what you read and hear"
+      ]
+    },
+    {
+      "question": "Geek leaks",
+      "answer": [
+        "Cross pollination of ideas (not just from software)"
+      ]
+    },
+    {
+      "question": "Looked over or overlooked",
+      "answer": [
+        "It is better to be looked over than overlooked:",
+        " - Know what you want to say",
+        " - Know your audience",
+        " - Choose your moment"
+      ]
+    },
+    {
+      "question": "Orthogonality",
+      "answer": [
+        "Eliminate effects between unrelated things"
+      ]
+    },
+    {
+      "question": "Properties of things",
+      "answer": [
+        "Don't rely on the properties of things you can't control!"
+      ]
+    },
+    {
+      "question": "Issue with only one idea...",
+      "answer": [
+        "Nothing is more dangerous than an idea if its the only one you have"
+      ]
+    },
+    {
+      "question": "Final decisions",
+      "answer": [
+        "There are no final decisions"
+      ]
+    },
+    {
+      "question": "Prototype code",
+      "answer": [
+        "Prototype code is THROW AWAY code"
+      ]
+    },
+    {
+      "question": "Assume...",
+      "answer": [
+        "Don't assume it, prove it"
+      ]
+    },
+    {
+      "question": "Requirements metaphor",
+      "answer": [
+        "Requirements are like water, they're better to build on when they're frozen"
+      ]
+    },
+    {
+      "question": "A 'wicked' problem - (Horst Rittel and Melvin Webber",
+      "answer": [
+        "A problem that can only be clearly defined only by solving it (hidden issues)."
+      ]
+    },
+    {
+      "question": "A program should be lean! YAGNI",
+      "answer": [
+        "You ain't going to need it! Design the system so that it has no extra parts"
+      ]
+    },
+    {
+      "question": "Containment",
+      "answer": [
+        "has a relationship"
+      ]
+    },
+    {
+      "question": "Inheritance",
+      "answer": [
+        "Is a relationship"
+      ]
+    },
+    {
+      "question": "When not to add abstractions",
+      "answer": [
+        "Do not add abstractions that dilute meaning"
+      ]
+    },
+    {
+      "question": "When to use inheritance and when to use containment",
+      "answer": [
+        "If multiple classes share common data but not behaviour, create a common object that those classes can 'containment'",
+        "If multiple classes share common behaviour but not data, derive them from a common base class that defines the common routines (inheritance)",
+        "If multiple classes share common data and behaviour, inherit from a common base class that defines the common data and routines",
+        "Inherit when you want the base class to control your interface: contain when you want to control your interface"
+      ]
+    },
+    {
+      "question": "Reasons to create a class",
+      "answer": [
+        "Model real-world objects",
+        "Model abstract objects",
+        "Reduce complexity",
+        "Isolate complexity",
+        "Hide implementation details",
+        "Limit effects of change",
+        "Hide global data",
+        "Stream live parameter passing",
+        "Make central points of control"
+      ]
+    },
+    {
+      "question": "Fist-class citizen",
+      "answer": [
+        "An entity that can be constructed at runtime, passed as a parameter, returned from a subroutine, or assigned into a variable"
+      ]
+    },
+    {
+      "question": "Mnemonic",
+      "answer": [
+        "Any learning technique that aids information retention"
+      ]
+    },
+    {
+      "question": "Naming, names to avoid:",
+      "answer": [
+        "Avoid misleading names or abbreviations",
+        "Avoid names with similar meanings",
+        "Avoid variables with different meanings but similar names",
+        "Avoid names that sound the similar e.g wrap, rap",
+        "Avoid numerals in names",
+        "Avoid multiple natural languages (ubiquitous)"
+      ]
+    },
+    {
+      "question": "Issues with global data",
+      "answer": [
+        "Inadvertent changes to global data - it broke here, here and here!",
+        "Bizarre and exciting aliasing problems - calling the variable by two names",
+        "Code reuse hindered by global data - Global data might have to be changed inorder to reuse",
+        "Modularity and intellectual manageability damaged by global data - The value is always in scope of what you are thinking"
+      ]
+    },
+    {
+      "question": "Principle of proximity",
+      "answer": [
+        "Keep related actions together"
+      ]
+    },
+    {
+      "question": "Normal path in code",
+      "answer": [
+        "Write the normal path through the code first; then write the unusual cases",
+        "Put the normal case after the if rather than after the else"
+      ]
+    },
+    {
+      "question": "Looping types",
+      "answer": [
+        "Counted loop - done specific number of times",
+        "Continuously evaluated loop - test whether it has finished at each cycle",
+        "Endless loop - loop forever... pacemaker?",
+        "Iterator loop - loops over all items in a container"
+      ]
+    },
+    {
+      "question": "CAP theorem",
+      "answer": [
+        "In theoretical computer science, the CAP theorem, also known as Brewer's theorem.",
+        "States it is impossible, for a distributed computer system, to simultaneously provide all three of the following guarantees",
+        " - Consistency (all nodes see the same data at the same time)",
+        " - Availability (a guarantee that every request receives a response)",
+        " - Partition tolerance (the system continues to operate despite arbitrary partitioning due to network failures)"
+      ]
     }
   ]
 }
