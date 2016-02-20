@@ -1,0 +1,247 @@
+{
+  "questions": [
+    {
+      "question": "What does the SOLID principle stand for?",
+      "answer": [
+        "Single responsibility principle - a class should have only a single responsibility",
+        "Open/Closed principle - a class should be open for extension, but closed for modification",
+        "Liskov substitution principle - Objects in a program should be replaceable with instances of their subtypes. Without altering the correctness of that program. Design by contract",
+        "Interface segregation principle - Many client specific interfaces are better than one general purpose interface",
+        "Dependancy inversion principle - Should depend upon abstractions. Do not depend on concretions"
+      ]
+    },
+    {
+      "question": "How to maintain orthogonality",
+      "answer": [
+        "Design independent, well-defined components",
+        "Keep your code decoupled",
+        "Avoid global data",
+        "Refactor similar functions"
+      ]
+    },
+    {
+      "question": "What is the principle of least knowledge",
+      "answer": ["only depend on your immediate friends"]
+    },
+    {
+      "question": "What is a design pattern?",
+      "answer": ["A pattern is a solution to a problem in a context"]
+    },
+    {
+      "question": "Le Blanc's law",
+      "answer": ["Later equals never"]
+    },
+    {
+      "question": "Rules of simple code",
+      "answer": [
+        "Runs all the tests",
+        "Contains no duplication",
+        "Expresses all the design ideas that are in the system",
+        "Minimise the number of entities such as classes, methods, functions and the like"
+      ]
+    },
+    {
+      "question": "What makes the program appear simple",
+      "answer": ["It's not the language that makes programs appear simple. It is the programmer that makes the language appear simple!"]
+    },
+    {
+      "question": "Good naming does not require?",
+      "answer": ["If a name requires a comment, then the name does not reveal its intent"]
+    },
+    {
+      "question": "Length of a name should correspond to?",
+      "answer": ["The size of its scope"]
+    },
+    {
+      "question": "Single responsibility principle",
+      "answer": ["A class should only have one reason to change"]
+    },
+    {
+      "question": "Cohesion",
+      "answer": ["A cohesive class should have most of its methods use all instance variables in a class"]
+    },
+    {
+      "question": "Clean tests follow the F.I.R.S.T principle, what is the F.I.R.S.T principle",
+      "answer": [
+        "Fast - tests should be fast. When tests run slow, you won't want to run them frequently. this can cause code rot through lazyness.",
+        "Independent - tests should not depend on each other, then the first one to fail causes a cascade of downstream failures, making diagnosis difficult and hiding down stream defects.",
+        "Repeatable - tests should be repeatable in any environment. Don't give your self an excuse of why they fail, this will cause complacency in your code and of course rot.",
+        "Self-Validating - the tests should have a boolean output. Pass and failure should never be subjective.",
+        "Timely - the tests need to be written in a timely fashion. Test should be written 'just before' production code. By doing this you refactor and create more readable code."
+      ]
+    },
+    {
+      "question": "Asking someone for knowledge is like a cup",
+      "answer": [
+        "continuously empty your cup. Basically don't go on about what you know if you want to know what they know",
+        "also known as a white belt mentality. Ask about what your are being taught."
+      ]
+    },
+    {
+      "question": "good things not sure on how to question it but read :)",
+      "answer": [
+        "Avoid defending your current level of knowledge - the apprentice should strive to become more teachable",
+        "pointing out mistakes or what you think are mistakes is a good way of learning",
+        "reflect on failure"
+      ]
+    },
+    {
+      "question": "Three things a good bug report should convey",
+      "answer": [
+        "1. How to reproduce the bug, as precisely as possible, and how often this will make a bug appear.",
+        "2. What should have happened, at least in your opinion",
+        "3. What actually happened, or at least as much information as you have recorded"
+      ]
+    },
+    {
+      "question": "Big O notation for Array Index",
+      "answer": ["O(1) - Constant"]
+    },
+    {
+      "question": "Big O notation for Binary search",
+      "answer": ["O(log n) - Logarithmic"]
+    },
+    {
+      "question": "Big O notation for String comparison",
+      "answer": ["O(n) - Linear"]
+    },
+    {
+      "question": "Big O notation for quick sort",
+      "answer": ["O(n log n) - n log n"]
+    },
+    {
+      "question": "Big O notation for simple sorting methods",
+      "answer": ["O(n^2) - Quadratic"]
+    },
+    {
+      "question": "Big O notation for matrix multiplication",
+      "answer": ["O(n^3) - Cubic"]
+    },
+    {
+      "question": "Big O notation for set partitioning",
+      "answer": ["O(2^n) - exponential"]
+    },
+    {
+      "question": "Testing",
+      "answer": [
+        "Test code at its boundaries",
+        "Test pre and post conditions",
+        "Test incrementally",
+        "Test simple parts first",
+        "Know what output to expect",
+        "Measure test coverage",
+        "Automate regression testing",
+        "Create self-contained tests"
+      ]
+    },
+    {
+      "question": "What should you do when debugging",
+      "answer": [
+        "Look for familiar patterns",
+        "Examine the most recent change",
+        "Debug now not latter",
+        "Read before typing",
+        "Explain your code to someone else",
+        "Make the bug reproducible",
+        "Divide and conquer, your code!",
+        "Study numerology of failures",
+        "Display output to localize your search",
+        "draw a picture!",
+        "use tools",
+        "keep records"
+      ]
+    },
+    {
+      "question": "Ensuring code is Portable (all about Portability)",
+      "answer": [
+        "Stick to the standard",
+        "Try several compilers",
+        "Hide system dependencies behind interfaces",
+        "Don't assume ASCII or UTF-8"
+      ]
+    },
+    {
+      "question": "Measuring performance",
+      "answer": [
+        "Automate timing measurements",
+        "Use a profiler",
+        "Concentrate on the hot spots",
+        "Draw a picture",
+        "Don't optimise what does not matter",
+        "Cache frequently-used values",
+        "Buffer input and output",
+        "Pre compute results",
+        "Use approx values"
+      ]
+    },
+    {
+      "question": "Transactions should be ACID what does this mean?",
+      "answer": [
+        "Atomic - Atomicity ensures that all the operations happen in a transaction or none",
+        "Consistent - Once a transaction ends (successfully or not), the system is left in a state consistent with the business that it models. The data shouldn't be corrupted with respect to reality",
+        "Isolated - Transactions should allow multiple users to work with the data, without each user's work getting tangled up with the others. (Synchronized/Locking)",
+        "Durable - Once a transaction has been completed, the results of the transaction should be made permanent so that they'll survive any sort of system crash"
+      ]
+    },
+    {
+      "question": "What is a dirty read?",
+      "answer": ["Occurs when one transaction reads data that has been written but not yet committed by another transaction. If the changes are latter rolled back, the data obtained by the first transaction will be invalid"]
+    },
+    {
+      "question": "What is a non repeatable read?",
+      "answer": ["Happens when a transactions performs the same query two or more times and each time the data is different. This is usually due to another concurrent transaction updating the data between queries"]
+    },
+    {
+      "question": "What is a Phantom read?",
+      "answer": ["These occur when a transaction (T1) reads several rows, and then a concurrent transaction (T2) inserts rows. Upon subsequent queries, the first transaction (T1) finds additional rows that weren't there before."]
+    },
+    {
+      "question": "What does REST stand for",
+      "answer": [
+        "Representational - rest resources can be represented in virtually any form, including xml, json or even html - whatever form best suits the consumer of those resources",
+        "State - When working with REST, we're more concerned with the state of a resource than with the actions we can take against resources",
+        "Transfer - REST involves transferring resource data, in some representational form, from one application to another"
+      ]
+    },
+    {
+      "question": "What does idempotent mean?",
+      "answer": ["Methods may or may not change state, but repeatable requests should have not further side effects after the first request. (e.g. GET, PUT, DELETE, OPTIONS)"]
+    },
+    {
+      "question": "REST considered safe if...",
+      "answer": ["A method is considered safe if it does not change the state of the resource. GET, OPTIONS"]
+    },
+    {
+      "question": "REST verbs",
+      "answer": [
+        "GET - Retrieves resource data from the server, The resource is identified by the request's URL.",
+        "POST - Posts (creates the resource) data to the server to be handled by a processor listening at the request's URL",
+        "PUT - Puts (updates the resource) resource data to the server, at the url of the request",
+        "DELETE - Deletes the resource on the server identified by the request's URL",
+        "OPTIONS - Requests available options for communication with the server."
+      ]
+    },
+    {
+      "question": "Ubiquitous language",
+      "answer": ["Building a common; rigorous language between developers and users. The language should be based on the domain model"]
+    },
+    {
+      "question": "What is a monotonic function",
+      "answer": [
+        "In mathematics a monotonic function (or monotone function) is a function between ordered sets that preserves the given order"
+      ]
+    },
+    {
+      "question": "Pure function",
+      "answer": [
+        "Given the same input it always evaluates to the same output",
+        "Does not depend on any hidden information or state (no free variables)",
+        "Does not cause any side affect, such as mutation of objects or state, or even IO"
+      ]
+    },
+    {
+      "question": "",
+      "answer": [""]
+    }
+  ]
+}

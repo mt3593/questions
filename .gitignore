@@ -1,0 +1,15 @@
+.classpath
+.project
+.settings/
+META-INF/
+target/
+*.swp
+.metadata
+.checkstyle
+*.class
+*.orig
+.idea
+*.iml
+*.log
+*.log.*
+*.pmd
