@@ -13,3 +13,4 @@ target/
 *.log
 *.log.*
 *.pmd
+dependency-reduced-pom.xml
