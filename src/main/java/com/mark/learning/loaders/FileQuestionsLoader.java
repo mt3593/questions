@@ -25,7 +25,16 @@ public class FileQuestionsLoader implements QuestionLoader {
                 for (JsonNode partAnswer : qa.path("answer")) {
                     answer.add(partAnswer.asText());
                 }
-                questions.put(qa.path("question").asText(), String.join("\n", answer));
+                String question = qa.path("question").asText();
+                if (!question.trim().isEmpty()) {
+                    if (!answer.isEmpty()) {
+                        questions.put(question, String.join("\n", answer));
+                    } else {
+                        throw new RuntimeException("Missing answer to question: " + question);
+                    }
+                } else {
+                    throw new RuntimeException("Missing question to answer: " + answer);
+                }
             }
             return questions;
         } catch (Exception e) {
