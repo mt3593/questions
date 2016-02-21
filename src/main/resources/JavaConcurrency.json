@@ -1,0 +1,102 @@
+{
+  "questions": [
+    {
+      "question": "Are stateless objects thread safe?",
+      "answer": [
+        "stateless objects are always thread safe"
+      ]
+    },
+    {
+      "question": "What do thread safe classes encapsulate?",
+      "answer": [
+        "Thread safe classes encapsulate any needed synchronization so that clients need not provide there own."
+      ]
+    },
+    {
+      "question": "To preserve state consistency",
+      "answer": [
+        "Update related state variables in a single atomic operation"
+      ]
+    },
+    {
+      "question": "When to guard",
+      "answer": [
+        "Every shared, mutable variable should be guarded by exactly one lock.",
+        "Make it clear to maintainers which lock that is"
+      ]
+    },
+    {
+      "question": "What are volatile variables used for?",
+      "answer": [
+        "Volatile variables ensure that updates to a variable are propagated predictably to other threads"
+      ]
+    },
+    {
+      "question": "Guarantee's of locking",
+      "answer": [
+        "Locking can guarantee both visibility and atomicity; volatile variables can only guarantee visibility"
+      ]
+    },
+    {
+      "question": "Ad-hoc thread confinement",
+      "answer": [
+        "Describes when the responsibility for maintaining thread confinement falls entirely on the implementation"
+      ]
+    },
+    {
+      "question": "Stack confinement",
+      "answer": [
+        "Is a special case of thread confinement in which an object can only be reached through local variables.",
+        "Local variables are intrinsically confined to the executing thread; they exist on the executing thread's stack.",
+        "Which is not accessible to other threads"
+      ]
+    },
+    {
+      "question": "Thread local",
+      "answer": [
+        "Allows you to associate a per-thread value with a value holding object"
+      ]
+    },
+    {
+      "question": "Immutable objects",
+      "answer": [
+        "Immutable objects are always thread-safe",
+        "An object is immutable if:",
+        " - Its state cannot be modified after construction",
+        " - All its fields are final",
+        " - It is properly constructed (the 'this' reference does not escape during construction.)"
+      ]
+    },
+    {
+      "question": "The publication requirements for an object depend on its mutability",
+      "answer": [
+        " - Immutable objects can be published through any mechanism",
+        " - Effectively immutable objects must be safely published",
+        " - Mutable objects must be safely published, and must be either thread-safe or guarded by a lock"
+      ]
+    },
+    {
+      "question": "The design process for a thread-safe class should include these three basic elements",
+      "answer": [
+        "Identify the variables that form the object's state",
+        "Identify the invariants that constrain the state variables",
+        "Establish a policy for managing concurrent access to the objects state"
+      ]
+    },
+    {
+      "question": "What are the most useful policies for using and sharing objects in a concurrent program",
+      "answer": [
+        "Thread-confined: A thread-confined object is owned exclusively by and confined to one thread, and can be modified by its owning thread",
+        "Shared read-only: A shared read-only object can be accessed concurrently by multiple threads without additional synchronization, but cannot be modified by any thread. Shared read-only objects include immutable and effectively immutable objects",
+        "Shared thread-safe: A thread-safe object performs synchronization internally, so multiple threads can freely access it through its public interface without further synchronization",
+        "Guarded: A guarded object can be accessed only with a specific lock held. Guarded objects include those that are encapsulated within other thread-safe objects and published objects that are known to be guarded by a specific lock"
+      ]
+    },
+    {
+      "question": "Performance payoff with homogeneous tasks",
+      "answer": [
+        "The real performance payoff of dividing a program's workload into task comes when there are a large number of independent, homogeneous tasks that can be processed concurrently"
+      ]
+    }
+  ]
+}

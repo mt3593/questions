@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class FileQuestionsLoader implements QuestionLoader {
@@ -37,7 +38,7 @@ public class FileQuestionsLoader implements QuestionLoader {
                 }
             }
             return questions;
-        } catch (Exception e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
