@@ -464,6 +464,61 @@
         " - Availability (a guarantee that every request receives a response)",
         " - Partition tolerance (the system continues to operate despite arbitrary partitioning due to network failures)"
       ]
+    },
+    {
+      "question": "Common code smells - class level",
+      "answer": [
+        "Large class - Gob object",
+        "Feature envy - a class that uses methods of another class excessively",
+        "Inappropriate intimacy - a class that has dependencies on implementation details of another class",
+        "Refused bequest - a class that overrides a method of a base class in such a way that the base class is not honoured by the derived class. - Liskov substitution principle",
+        "Lazy class / Freeloader - a class that does too little",
+        "Excessive use of literals - these should be coded as named constants, to improve readability and to avoid programing errors",
+        "Cyclomatic complexity - too many branches or loops; this may indicate a function needs to be broken up into smaller functions, or that it has potential for simplification",
+        "Downcasting - a type cast that breaks the abstraction model; the abstraction may have to be refactored or eliminated",
+        "Orphan Variable or Constant class - a class that typically has a collection of constants which belong elsewhere (typically a problem when using a constants class) where those constants should be owned by one of the other member classes"
+      ]
+    },
+    {
+      "question": "Common code smells - method level",
+      "answer": [
+        "Too many parameters - a long list of parameters is hard to read, and makes calling and testing the function complicated. It may indicate that the purpose of the function is ill-conceived and that the code should be refactored so responsibility in a more clean-cut way",
+        "Long method - a method function or procedure that has grown too large",
+        "Excessively long identifiers - in particular, the use of naming conventions to provide disambiguation that should be implicit in the software architecture",
+        "Excessively short identifiers - the name of a variable should reflect its function unless the function is obvious",
+        "Excessive return of data - a function or method that returns more than what each of its callers needs"
+      ]
+    },
+    {
+      "question": "Dependency inversion principle",
+      "answer": [
+        "Refers to a specific form of decoupling software modulus. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level modules independent of the low-level module implementation details.",
+        "The Principle states:",
+        "A. High-level modules should not depend on low-level modules. Both should depend on abstractions",
+        "B. Abstractions should not depend on details. Details should depend on abstractions"
+      ]
+    },
+    {
+      "question": "Open/closed principle",
+      "answer": [
+        "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"
+      ]
+    },
+    {
+      "question": "Interface segregation principle",
+      "answer": [
+        "The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use.",
+        "ISP splits interfaces which are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.",
+        "Such shrunken interfaces are also called role interfaces.",
+        "ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy."
+      ]
+    },
+    {
+      "question": "GRASP (object-oriented design)",
+      "answer": [
+        "General Responsibility Assignment Software Patterns (or Principles), abbreviated GRASP, consist of guidelines for assigning responsibility to classes and objects in object-oriented design.",
+        "The different patterns and principles used in GRASP are: Controller, Creator, Indirection, Information Expert, High Cohesion, Low Coupling, Polymorphism, Protected Variations, and Pure Fabrication."
+      ]
     }
   ]
 }
